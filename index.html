@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de connexion">
+    <title>Connexion | Mon application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="login-card" aria-labelledby="login-title">
+            <div class="brand-mark" aria-hidden="true">M</div>
+
+            <p class="eyebrow">MON APPLICATION</p>
+            <h1 id="login-title">Bon retour !</h1>
+            <p class="subtitle">Connectez-vous à votre compte pour continuer.</p>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Votre nom d'utilisateur"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Votre mot de passe"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <p id="login-message" class="message" role="status" aria-live="polite"></p>
+
+                <button id="login-button" type="submit">
+                    <span class="button-text">Se connecter</span>
+                    <span class="button-spinner" aria-hidden="true"></span>
+                </button>
+            </form>
+
+            <p class="footer-text">© 2026 Mon application</p>
+        </section>
+    </main>
+</body>
+</html>
