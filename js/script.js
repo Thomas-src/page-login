@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/auth/login";
+const API_URL = "https://serveur-api-1-0.onrender.com/api/auth/login";
 
 const loginForm = document.querySelector("#login-form");
 const usernameInput = document.querySelector("#username");
